@@ -1,6 +1,6 @@
 # Zeroday
 
-**zeroday** is an open-source hardware and software project focused on building privacy-first mobile phones.
+**zeroday** is an open-source hardware (ESP32) and software project focused on building privacy-first mobile phones.
 
 The goal of this project is to create devices that prioritize **user privacy, transparency, and programmability**. Unlike most modern smartphones, zeroday devices are designed to be **fully inspectable, modifiable, and developer-friendly**.
 
