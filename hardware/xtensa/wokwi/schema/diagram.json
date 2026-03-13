@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "author": "Carl Johnson",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard", "id": "bb1", "top": -108.6, "left": -410, "attrs": {} },
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": -105.6,
+      "left": -302.36,
+      "attrs": { "fastTLS": "1" }
+    },
+    {
+      "type": "wokwi-ili9341",
+      "id": "lcd1",
+      "top": -379.1,
+      "left": 30,
+      "rotate": 90,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "lcd1:GND", "esp:GND.2", "black", [ "h-19.2", "v91.54" ] ],
+    [ "lcd1:RST", "esp:4", "purple", [ "h-48", "v67.2" ] ],
+    [ "lcd1:D/C", "esp:2", "#8f4814", [ "h-28.8", "v44.14" ] ],
+    [ "lcd1:SCK", "esp:18", "gray", [ "v-0.01", "h-48", "v-19.2" ] ],
+    [ "lcd1:MISO", "esp:19", "orange", [ "h-67.2", "v-9.61", "h0", "v-19.2" ] ],
+    [ "lcd1:MOSI", "esp:23", "green", [ "h-38.4", "v-67.31" ] ],
+    [ "esp:5V", "lcd1:VCC", "red", [ "h-21.83", "v-206.3", "h201.6", "v48.5" ] ],
+    [ "lcd1:CS", "esp:15", "violet", [ "h-57.6", "v105.6" ] ],
+    [ "esp:0", "bb1:20b.j", "", [ "$bb" ] ],
+    [ "esp:4", "bb1:20b.i", "", [ "$bb" ] ],
+    [ "esp:5", "bb1:20b.f", "", [ "$bb" ] ],
+    [ "esp:12", "bb1:10b.i", "", [ "$bb" ] ],
+    [ "esp:14", "bb1:10b.h", "", [ "$bb" ] ],
+    [ "esp:16", "bb1:20b.h", "", [ "$bb" ] ],
+    [ "esp:17", "bb1:20b.g", "", [ "$bb" ] ],
+    [ "esp:21", "bb1:20t.d", "", [ "$bb" ] ],
+    [ "esp:22", "bb1:20t.a", "", [ "$bb" ] ],
+    [ "esp:26", "bb1:10b.f", "", [ "$bb" ] ],
+    [ "esp:27", "bb1:10b.g", "", [ "$bb" ] ],
+    [ "esp:32", "bb1:10t.e", "", [ "$bb" ] ],
+    [ "esp:34", "bb1:10t.c", "", [ "$bb" ] ],
+    [ "esp:35", "bb1:10t.d", "", [ "$bb" ] ],
+    [ "esp:VP", "bb1:10t.a", "", [ "$bb" ] ],
+    [ "esp:VN", "bb1:10t.b", "", [ "$bb" ] ],
+    [ "esp:GND.1", "bb1:10b.j", "", [ "$bb" ] ],
+    [ "esp:D3", "bb1:bp.7", "", [ "$bb" ] ],
+    [ "esp:CMD", "bb1:bn.7", "", [ "$bb" ] ],
+    [ "esp:TX", "bb1:20t.b", "", [ "$bb" ] ],
+    [ "esp:RX", "bb1:20t.c", "", [ "$bb" ] ],
+    [ "esp:GND.3", "bb1:20t.e", "", [ "$bb" ] ]
+  ],
+  "dependencies": {}
+}
