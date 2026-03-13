@@ -29,4 +29,4 @@ Step 3: Flashing the OS
 So this is the guide that how to make your own ZeroDay MegaShark 1.
 
 Wait, don't you have the main board or the screen?
-We built this device for you. You can access through:
+We built this device for you. You can access through: https://wokwi.com/projects/458406276943896577
