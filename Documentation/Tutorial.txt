@@ -1,0 +1,32 @@
+This is an tutorial that how you can build "ZeroDay MegaShark 1", or the codename "Mattheus".
+
+Requirements:
+  -- ESP32 DevKit C V4 (Processor and motherboard of the ZeroDay MegaShark 1)
+  -- ILI9341 TFT LCD (SPI) (Main screen of the ZeroDay MegaShark 1)
+  -- USB cable
+  -- Breadboard (Optional)
+
+Step 1: Connect pins
+  | TFT Pin | ESP32 Pin |
+  | ------- | --------- |
+  | VCC     | 5V        |
+  | GND     | GND       |
+  | CS      | 15        |
+  | RST     | 4         |
+  | D/C     | 2         |
+  | SCK     | 18        |
+  | MOSI    | 23        |
+  | MISO    | 19        |
+
+Step 2: Connecting
+  Connect the ESP32 board to the computer
+
+Step 3: Flashing the OS
+  Download the Arduino IDE, setup the ESP modules.
+  Paste the code thats stored in software/cpp/main.ino to the editor.
+  Press BOOT button while uploading, and then, the OS is flashed successfully.
+
+So this is the guide that how to make your own ZeroDay MegaShark 1.
+
+Wait, don't you have the main board or the screen?
+We built this device for you. You can access through:
